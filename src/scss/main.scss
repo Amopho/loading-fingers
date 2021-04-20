@@ -38,7 +38,7 @@ body {
     @include move($animation-duration);
     @for $i from 1 through $items-count {
       &--#{$i} {
-        animation-delay: $animation-delay * $i;
+        animation-delay: $animation-delay * $i + random(100) * 15ms;
       }
     }
   }
