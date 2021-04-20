@@ -20,10 +20,7 @@ $animation-delay: $animation-duration / $items-count;
 
 body {
   background-color: $black-background;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include center;
 }
 
 // define items
@@ -38,9 +35,7 @@ body {
     width: $size;
     box-shadow: 0 0 4px $my-shadow;
     border: 1px $my-border solid;
-    animation: move-bars $animation-duration backwards infinite ease-in-out
-      alternate;
-    // animation backwards- extending starting values of trhe animation to the loading time
+    @include move($animation-duration);
     @for $i from 1 through $items-count {
       &--#{$i} {
         animation-delay: $animation-delay * $i;

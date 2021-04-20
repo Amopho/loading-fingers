@@ -3,4 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+// animation mixin
+@mixin move($animation-duration) {
+  animation-name: move-bars;
+  animation-duration: $animation-duration;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
 }
