@@ -1,8 +1,8 @@
 body {
   background-color: rgba(17, 16, 16, 0.89);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -18,7 +18,11 @@ body {
   width: 5vh;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
   border: 1px rgba(255, 255, 255, 0.75) solid;
-  animation: move-bars 2000ms backwards infinite ease-in-out alternate;
+  animation-name: move-bars;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
 }
 .load__bar--1 {
   animation-delay: 400ms;
