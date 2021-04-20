@@ -26,19 +26,44 @@ body {
   animation-timing-function: linear;
 }
 .load__bar--1 {
-  animation-delay: 1750ms;
+  animation-delay: 865ms;
+}
+.load__bar--1-inverted {
+  animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+  background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--2 {
-  animation-delay: 1820ms;
+  animation-delay: 920ms;
+}
+.load__bar--2-inverted {
+  animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+  background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--3 {
-  animation-delay: 2040ms;
+  animation-delay: 1410ms;
+}
+.load__bar--3-inverted {
+  animation-delay: 1200ms;
+  animation-direction: alternate-reverse;
+  background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--4 {
-  animation-delay: 2695ms;
+  animation-delay: 2950ms;
+}
+.load__bar--4-inverted {
+  animation-delay: 1600ms;
+  animation-direction: alternate-reverse;
+  background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--5 {
-  animation-delay: 2405ms;
+  animation-delay: 2060ms;
+}
+.load__bar--5-inverted {
+  animation-delay: 2000ms;
+  animation-direction: alternate-reverse;
+  background-color: rgba(0, 160, 96, 0.6);
 }
 
 @keyframes move-bars {
