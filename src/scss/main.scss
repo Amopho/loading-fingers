@@ -40,10 +40,15 @@ body {
       &--#{$i} {
         animation-delay: $animation-delay * $i + random(100) * 15ms;
       }
+      &--#{$i}-inverted {
+        animation-delay: $animation-delay * $i;
+        animation-direction: alternate-reverse;
+        background-color: $my-medium-green;
+      }
     }
   }
 }
-
+// using for loops to create selectors in builded main.css for each set of bars -top, and bottom (which after gaining new selectors in html, may get inverted animations as well as new colour)
 // define animation
 @keyframes move-bars {
   0% {
