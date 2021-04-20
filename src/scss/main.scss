@@ -14,7 +14,9 @@ $my-shadow: rgba(255, 255, 255, 0.5);
 $my-border: rgba(255, 255, 255, 0.75);
 
 // animation
-$anim-duration: 1s;
+$animation-duration: 1s;
+$items-count: 5;
+$animation-delay: $animation-duration/ $items-count;
 
 body {
   background-color: $black-background;
@@ -35,7 +37,10 @@ body {
     width: $size;
     box-shadow: 0 0 4px $my-shadow;
     border: 1px $my-border solid;
-    animation: move-bars $anim-duration;
+    animation: move-bars $animation-duration;
+    // @for @i from 1 through $items-count {
+
+    // };
   }
 }
 
