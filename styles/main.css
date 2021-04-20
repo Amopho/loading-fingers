@@ -1,5 +1,8 @@
 body {
   background-color: rgba(17, 16, 16, 0.89);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .load {
@@ -12,6 +15,18 @@ body {
   background-color: rgba(0, 128, 128, 0.6);
   height: 100%;
   width: 5vh;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  border: 1px rgba(255, 255, 255, 0.75) solid;
+  animation: move-bars 1s;
+}
+
+@keyframes move-bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
