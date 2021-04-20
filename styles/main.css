@@ -16,8 +16,8 @@ body {
   background-color: rgba(0, 128, 128, 0.6);
   height: 100%;
   width: 5vh;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-  border: 1px rgba(255, 255, 255, 0.75) solid;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  border: 2px rgba(255, 255, 255, 0.75) solid;
   animation-name: move-bars;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
@@ -26,7 +26,7 @@ body {
   animation-timing-function: linear;
 }
 .load__bar--1 {
-  animation-delay: 865ms;
+  animation-delay: 925ms;
 }
 .load__bar--1-inverted {
   animation-delay: 400ms;
@@ -34,7 +34,7 @@ body {
   background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--2 {
-  animation-delay: 920ms;
+  animation-delay: 965ms;
 }
 .load__bar--2-inverted {
   animation-delay: 800ms;
@@ -42,7 +42,7 @@ body {
   background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--3 {
-  animation-delay: 1410ms;
+  animation-delay: 1995ms;
 }
 .load__bar--3-inverted {
   animation-delay: 1200ms;
@@ -50,7 +50,7 @@ body {
   background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--4 {
-  animation-delay: 2950ms;
+  animation-delay: 3055ms;
 }
 .load__bar--4-inverted {
   animation-delay: 1600ms;
@@ -58,7 +58,7 @@ body {
   background-color: rgba(0, 160, 96, 0.6);
 }
 .load__bar--5 {
-  animation-delay: 2060ms;
+  animation-delay: 3095ms;
 }
 .load__bar--5-inverted {
   animation-delay: 2000ms;
