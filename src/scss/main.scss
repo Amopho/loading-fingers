@@ -1,3 +1,11 @@
-body {
-  background-color: black;
-}
+// define the number of columns
+$items-count: 28;
+
+//define colors
+$my-dark-green: rgba(0, 128, 128, 0.6);
+$my-medium-green: rgba(0, 160, 96, 0.6);
+$my-pale-green: rgba(0, 192, 64, 0.6);
+$my-shadow: rgba(255, 255, 255, 0.5);
+$my-border: rgba(255, 255, 255, 0.75);
+
+// define animation
