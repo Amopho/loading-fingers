@@ -1,4 +1,4 @@
-@import "./variables/_mixins.scss";
+@import "./variables/mixins";
 
 // background
 $black-background: rgba(17, 16, 16, 0.89);
@@ -13,11 +13,17 @@ $my-pale-green: rgba(0, 192, 64, 0.6);
 $my-shadow: rgba(255, 255, 255, 0.5);
 $my-border: rgba(255, 255, 255, 0.75);
 
+// animation
+$anim-duration: 1s;
+
 body {
   background-color: $black-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-// define animation
+// define items
 .load {
   width: $size * 10;
   height: $size * 7.5;
@@ -27,5 +33,19 @@ body {
     background-color: $my-dark-green;
     height: 100%;
     width: $size;
+    box-shadow: 0 0 4px $my-shadow;
+    border: 1px $my-border solid;
+    animation: move-bars $anim-duration;
+  }
+}
+
+// define animation
+@keyframes move-bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+
+  100% {
+    transform: scaleY(1);
   }
 }
