@@ -17,7 +17,22 @@ body {
   width: 5vh;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
   border: 1px rgba(255, 255, 255, 0.75) solid;
-  animation: move-bars 1s;
+  animation: move-bars 2000ms backwards infinite ease-in-out alternate;
+}
+.load__bar--1 {
+  animation-delay: 400ms;
+}
+.load__bar--2 {
+  animation-delay: 800ms;
+}
+.load__bar--3 {
+  animation-delay: 1200ms;
+}
+.load__bar--4 {
+  animation-delay: 1600ms;
+}
+.load__bar--5 {
+  animation-delay: 2000ms;
 }
 
 @keyframes move-bars {
