@@ -33,8 +33,8 @@ body {
     background-color: $my-dark-green;
     height: 100%;
     width: $size;
-    box-shadow: 0 0 4px $my-shadow;
-    border: 1px $my-border solid;
+    box-shadow: 0 0 6px $my-shadow;
+    border: 2px $my-border solid;
     @include move($animation-duration);
     @for $i from 1 through $items-count {
       &--#{$i} {
