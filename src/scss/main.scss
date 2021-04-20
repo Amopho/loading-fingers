@@ -1,8 +1,8 @@
 // background
-$black-background: rgba(17, 16, 16, 0.527);
+$black-background: rgba(17, 16, 16, 0.89);
 
 // define the defeult size
-$size: 3vh;
+$size: 5vh;
 
 //define colors
 $my-dark-green: rgba(0, 128, 128, 0.6);
@@ -17,5 +17,13 @@ body {
 
 // define animation
 .loading {
-  width: $size;
+  width: $size * 10;
+  height: $size * 7.5;
+  display: flex;
+  justify-content: space-evenly;
+  .loading:nth-child(even) {
+    background-color: $my-dark-green;
+    height: 100%;
+    width: $size;
+  }
 }
