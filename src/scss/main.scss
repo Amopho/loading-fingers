@@ -1,5 +1,8 @@
-// define the number of columns
-$items-count: 28;
+// background
+$black-background: rgba(17, 16, 16, 0.527);
+
+// define the defeult size
+$size: 3vh;
 
 //define colors
 $my-dark-green: rgba(0, 128, 128, 0.6);
@@ -8,4 +11,11 @@ $my-pale-green: rgba(0, 192, 64, 0.6);
 $my-shadow: rgba(255, 255, 255, 0.5);
 $my-border: rgba(255, 255, 255, 0.75);
 
+body {
+  background-color: $black-background;
+}
+
 // define animation
+.loading {
+  width: $size;
+}
